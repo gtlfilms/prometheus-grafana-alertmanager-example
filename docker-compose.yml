@@ -66,7 +66,6 @@ services:
       - /sys:/sys:ro
       - /var/lib/docker/:/var/lib/docker:ro
       - /var/run/docker.sock:/var/run/docker.sock
-      - /cgroup:/cgroup:ro
     devices:
       - /dev/kmsg:/dev/kmsg
     ports:
