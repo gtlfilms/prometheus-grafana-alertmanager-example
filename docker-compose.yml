@@ -68,6 +68,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     devices:
       - /dev/kmsg:/dev/kmsg
+    privileged: true  
     ports:
       - 8080:8080
     restart: always
