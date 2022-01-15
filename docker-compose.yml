@@ -94,7 +94,7 @@ services:
     ports:
       - 9115:9115
     volumes:
-      - ./blackboxexporter/:/config prom/blackbox-exporter:master
+      - ./blackboxexporter/:/etc/blackboxexporter/
     command:
-      - '--config.file=/config/blackbox.yml'
+      - '--config.file=/etc/blackboxexporter/config.yml'
     restart: always
